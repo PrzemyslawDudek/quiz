@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}">
     <link rel="stylesheet" href="../static/css/quiz.css" th:href="@{/css/quiz.css}">
 
+    <!--JS Scripts-->
+    <script type="text/javascript" defer src="../static/js/browser_info.js"
+            th:src="@{/js/browser_info.js}"></script>
+
     <title>Quiz</title>
 </head>
 <body>
@@ -32,19 +36,19 @@
                     </div>
                     <div class="question_nb">Pytanie 2</div>
                     <div class="question_answer">
-                        <label for="q2" class="question_label" th:text="${quiz.questionForR}">>Question 2</label>
+                        <label for="q2" class="question_label" th:text="${quiz.questionForR}">Question 2</label>
                         <input class="input" id="q2" type="text" placeholder="Wpisz odpowiedź" th:field="*{answerForR}"
                                th:readonly="${isAnswered}">
                     </div>
                     <div class="question_nb">Pytanie 3</div>
                     <div class="question_answer">
-                        <label for="q3" class="question_label" th:text="${quiz.questionForU}">>Question 3</label>
+                        <label for="q3" class="question_label" th:text="${quiz.questionForU}">Question 3</label>
                         <input class="input" id="q3" type="text" placeholder="Wpisz odpowiedź" th:field="*{answerForU}"
                                th:readonly="${isAnswered}">
                     </div>
                     <div class="question_nb">Pytanie 4</div>
                     <div class="question_answer">
-                        <label for="q4" class="question_label" th:text="${quiz.questionForD}">>Question 4</label>
+                        <label for="q4" class="question_label" th:text="${quiz.questionForD}">Question 4</label>
                         <input class="input" id="q4" type="text" placeholder="Wpisz odpowiedź" th:field="*{answerForD}"
                                th:readonly="${isAnswered}">
                     </div>
